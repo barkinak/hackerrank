@@ -2,6 +2,13 @@ package hackerrank.sorting;
 
 public class BubbleSort {
 
+    public static void main(String[] args){
+        int[] a = {3, 9, 8, 3, 9, 7, 9, 7, 0};
+        bubbleSort(a);
+        printArr(a);
+        // Result: [0 3 3 7 7 8 9 9 9]
+    }
+
     static int bubbleSort(int arr[]) {
         int n = arr.length;
         int count = 0;
@@ -16,5 +23,11 @@ public class BubbleSort {
                 }
         return count;
     }
-    
+
+    static void printArr(int[] arr){
+        for(int i: arr)
+            System.out.print(i + " ");
+        System.out.println();
+    }
+
 }
